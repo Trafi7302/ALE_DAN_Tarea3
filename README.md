@@ -1,2 +1,6 @@
 # Tarea-2--Grupo-5
-Repositorio correspondiente al desarrollo de la Tarea 2 del ramo de Programación de Computadores
+Repositorio correspondiente al desarrollo de la Tarea 2 del ramo de Programación de Computadores.
+
+En los lugares en los que se ofrece estadía temporal a la gente, ya sean hostales, posadas, hospedajes, hoteles, etc. A menudo se presentan demoras en el servicio de atención al cliente, específicamente en el hall principal del establecimiento y en que el servicio que ofrece a la hora de reservar una habitación, no es de las mas eficientes en caso de una gran demanda por un arriendo de piezas, en consecuencia se forman aglomeraciones, dando paso a largas y tediosas filas. Este algoritmo busca solucionar este problema.
+
+En primer lugar, el desarrollo del programa consultará al usuario que solicita la reserva de habitación sus datos: nombre (no es necesario nombre completo, solo se exige mínimo un apellido), tipo de habitación (para cuántas personas, ver Tabla), cantidad de días que quiere quedarse y el método de pago (Tarjeta de Crédito/Débito o Efectivo, en el caso de elegir costear con crédito/débito, solicitar el rut del usuario, en otro caso, seguir con el procedimiento). Finalmente se debe imprimir por pantalla una boleta que indique los datos del usuario y el valor total que debe pagar (considerando el tipo de habitación elegida y el precio que corresponde a cada una respecto la Tabla) y un mensaje de despedida para proceder a atender a la siguiente persona.
