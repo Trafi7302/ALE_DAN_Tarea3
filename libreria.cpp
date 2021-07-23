@@ -1,3 +1,4 @@
+#include "./libreria.h"
 #include <stdio.h>
 // IMPLEMENTACIONES 
 

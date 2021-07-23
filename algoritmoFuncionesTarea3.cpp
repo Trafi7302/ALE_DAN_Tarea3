@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "libreria.h"
+#include "./libreria.h"
 
 int main(){
   // Variables de Servicio Principal correspondientes, ofrecidas por el local de residencia temporal
