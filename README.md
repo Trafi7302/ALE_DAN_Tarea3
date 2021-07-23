@@ -1,4 +1,4 @@
-# Tarea-2--Grupo-5
+# ALE_DAN_Tarea3
 Repositorio correspondiente al desarrollo de la Tarea 2 del ramo de Programación de Computadores.
 
 En los lugares en los que se ofrece estadía temporal a la gente, ya sean hostales, posadas, hospedajes, hoteles, etc. A menudo se presentan demoras en el servicio de atención al cliente, específicamente en el hall principal del establecimiento y en que el servicio que ofrece a la hora de reservar una habitación, no es de las mas eficientes en caso de una gran demanda por un arriendo de piezas, en consecuencia se forman aglomeraciones, dando paso a largas y tediosas filas. Este algoritmo busca solucionar este problema.
