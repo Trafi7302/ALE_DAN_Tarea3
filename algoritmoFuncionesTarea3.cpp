@@ -1,3 +1,18 @@
+/* Universidad de La Frontera
+* Departamento de Ingeniería Eléctrica
+*
+* ICC-202 PROGRAMACION DE COMPUTADORES
+*
+* Tarea 3
+*
+* Autores: Alejandra García Vargas. (a.garcia05@ufromail.cl)
+*          Daniel Trafian Millán. (d.trafian01@ufromail.cl)
+*
+* Fecha:  25 de Julio del 2021
+*
+* Algoritmo de software que ayuda a manejar el servicio de gestión de reserva/arriendo de habitaciones en un local de * estadía temporal. Al implementarse, el algoritmo estará funcionando hasta que la totalidad de dormitorios sean      * ocupados, y el objetivo es mejorar la calidad de servicio de la agencia, permitiéndole al cliente un acceso cómodo * y más expedito.
+*/
+
 #include <stdio.h>
 #include "./libreria.h"
 
