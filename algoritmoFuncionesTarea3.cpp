@@ -30,7 +30,8 @@ int main(){
     Total Habitaciones:              70          ------>   (totalHabitaciones)
 
   */
-    cantidadHabitacionesOfrecidas(&totalHabitaciones, &habitacionesDisp1, &habitacionesDisp2, &habitacionesDisp3,     &habitacionesDisp4);
+
+  cantidadHabitacionesOfrecidas(&totalHabitaciones, &habitacionesDisp1, &habitacionesDisp2, &habitacionesDisp3,       &habitacionesDisp4);
 
   // Evaluar la disponibilidad de habitaciones
   while( solicitud <= totalHabitaciones ){
@@ -206,9 +207,8 @@ int main(){
         }
     } else{
       // En cualquier otro caso, Se cancela la operación y se reinicia la solicitud actual
-      printf("\nOPCION INVALIDA. NO SE PUDO REALIZAR LA OPERACION.\n");
-                printf("\n\n");
-          continue;
+      opcionInvalida(tipoHabitacion, 1, 4);
+      continue;
     } 
 
     // Solicitar ingresar al usuario, los días que decidirá alojarse.

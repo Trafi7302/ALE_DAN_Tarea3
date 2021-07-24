@@ -54,6 +54,13 @@ void menuTiposDeHabitacion(int* tipoHabitacionElegido){
   scanf("%d", tipoHabitacionElegido);  
 }
 
+void opcionInvalida(int opcionIngresada, int menor, int mayor){
+  if((opcionIngresada < menor) || (opcionIngresada > mayor)){
+      printf("\nOPCION INVALIDA. NO SE PUDO REALIZAR ESTA OPERACION.\n");
+      printf("\n\n");
+  }
+}
+
 void reservarPiezaIndividual(int &contador1, int &precio){
   contador1++ ;
   precio = 20000;
@@ -69,6 +76,9 @@ void ofrecerHabitacionDoble(int* opcionDeHabitacionEscogida){
     printf("1.- CONFIRMAR.\n");
     printf("2.- CANCELAR.\n");
     scanf("%d", opcionDeHabitacionEscogida);
+
+    opcionInvalida(*opcionDeHabitacionEscogida, 1, 2);
+
   } while((*opcionDeHabitacionEscogida < 1) || (*opcionDeHabitacionEscogida > 2));
 }
 
@@ -88,6 +98,9 @@ void ofrecerHabitacionTriple(int* opcionDeHabitacionEscogida){
     printf("1.- CONFIRMAR.\n");
     printf("2.- CANCELAR.\n");
     scanf("%d", opcionDeHabitacionEscogida);
+
+    opcionInvalida(*opcionDeHabitacionEscogida, 1, 2);
+
   } while((*opcionDeHabitacionEscogida < 1) || (*opcionDeHabitacionEscogida > 2));
 }
 
@@ -107,6 +120,9 @@ void ofrecerHabitacionCuadruple(int* opcionDeHabitacionEscogida){
     printf("1.- CONFIRMAR.\n");
     printf("2.- CANCELAR.\n");
     scanf("%d", opcionDeHabitacionEscogida);
+
+    opcionInvalida(*opcionDeHabitacionEscogida, 1, 2);
+
   } while((*opcionDeHabitacionEscogida < 1) || (*opcionDeHabitacionEscogida > 2));
 }
 
@@ -127,6 +143,8 @@ void ofrecerHabitacionesDobles(int* opcionDeHabitacionEscogida){
     printf("1.- CONFIRMAR.\n");
     printf("2.- CANCELAR.\n");
     scanf("%d", opcionDeHabitacionEscogida);
+
+    opcionInvalida(*opcionDeHabitacionEscogida, 1, 2);
               
   } while((*opcionDeHabitacionEscogida < 1) || (*opcionDeHabitacionEscogida > 2));
 }
@@ -168,6 +186,9 @@ void metodoPago(int* ingresarOpcion, int* ingresarRut, int menor, int mayor){
     printf("||-------------------------------------------||\n");
     scanf("%d", ingresarOpcion);
     printf("\n");
+
+    opcionInvalida(*ingresarOpcion, menor, mayor);
+
   } while((*ingresarOpcion < menor) || (*ingresarOpcion > mayor));
 
   if(*ingresarOpcion == 1){

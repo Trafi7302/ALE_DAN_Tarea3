@@ -11,6 +11,8 @@ void mensajeBienvenida(char* nombreIngresado, char* apellidoIngresado);
 
 void menuTiposDeHabitacion(int* tipoHabitacionElegido);
 
+void opcionInvalida(int opcionIngresada, int menor, int mayor);
+
 void reservarPiezaIndividual(int &contador1, int &precio);
 
 void ofrecerHabitacionDoble(int* opcionDeHabitacionEscogida); 
