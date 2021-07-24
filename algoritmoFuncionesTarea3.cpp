@@ -214,8 +214,8 @@ int main(){
     // Solicitar ingresar al usuario, los días que decidirá alojarse.
     cantidadDiasHospedaje(&dias);
 
-    /* Consultar el método de pago al usuario. Evaluando el método de pago según la opción que elija.
-    */
+    // Consultar el método de pago al usuario. Evaluando el método de pago según la opción que elija.
+    
     metodoPago(&opcion, &rut, 1, 2);
 
     // El precio total a pagar, estará dado por el precio por tipo de habitación elegido anteriormente y la cantidad de días que se hospedará(n) el(los) clientes.
