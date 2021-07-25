@@ -45,6 +45,9 @@ int main(){
     Total Habitaciones:              70          ------>   (totalHabitaciones)
 
   */
+  FILE* lecturaNombres = fopen("clientes.txt", "a+");
+  fprintf(lecturaNombres, "Cliente       -       Nombre        -        Total a Pagar       -       Rut       \n");
+  fclose(lecturaNombres);
 
   cantidadHabitacionesOfrecidas(&totalHabitaciones, &habitacionesDisp1, &habitacionesDisp2, &habitacionesDisp3,       &habitacionesDisp4);
 
@@ -236,6 +239,10 @@ int main(){
     // El precio total a pagar, estará dado por el precio por tipo de habitación elegido anteriormente y la cantidad de días que se hospedará(n) el(los) clientes.
     precioTotal = totalAPagar(precio, dias);
     
+
+    FILE* lecturaNombres = fopen("clientes.txt", "a");
+    fprintf(lecturaNombres, "   %d              %s %s                $%d                  %d        \n", solicitud + 1, nombre, apellido, precioTotal, rut);
+    
     /* 
       De acuerdo al tipo de habitación solicitado por el usuario, en la 'boleta' se imprimirá el
       tipo de pieza correspondiente.   
@@ -245,5 +252,7 @@ int main(){
     
     solicitud++;  
   }
+  
+  fclose(lecturaNombres);
   return 0;
 }

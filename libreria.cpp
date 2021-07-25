@@ -426,15 +426,15 @@ int totalAPagar(int precioHabitacion, int cantidadDias){
 */
 void imprimirBoleta(int numeroSolicitud, char* nombreDelUsuario, char* apellidoDelUsuario, int tipoHabitacionElegida, int diasHospedaje, int precioFinal, int opcionIngresada, int rutIngresado){
   printf("\n\n");
-    printf("     *** SOLICITUD NUMERO %d ***\n - Nombre: %s %s \n - Tipo de Habitacion: Opcion %d \n - Dias a Hospedarse: %d \n - Total a Pagar: $%d pesos.\n", numeroSolicitud + 1, nombreDelUsuario, apellidoDelUsuario, tipoHabitacionElegida, diasHospedaje, precioFinal);
+  printf("     *** SOLICITUD NUMERO %d ***\n - Nombre: %s %s \n - Tipo de Habitacion: Opcion %d \n - Dias a Hospedarse: %d \n - Total a Pagar: $%d pesos.\n", numeroSolicitud + 1, nombreDelUsuario, apellidoDelUsuario, tipoHabitacionElegida, diasHospedaje, precioFinal);
 
-    if(opcionIngresada == 1){
-      printf(" - Metodo de Pago: EFECTIVO.\n\n\n");
-    } 
+  if(opcionIngresada == 1){
+    printf(" - Metodo de Pago: EFECTIVO.\n\n\n");
+  } 
     // De acuerdo al método de pago elegido por el usuario, se imprimirá el rut del cliente si paga con tarjeta.
-    if(opcionIngresada == 2){
-      printf(" - Metodo de Pago: TARJETA.\n");
-      printf("    * RUT ---> %d\n", rutIngresado);
-      printf("\n\n");
-    } 
+  if(opcionIngresada == 2){
+    printf(" - Metodo de Pago: TARJETA.\n");
+    printf("    * RUT ---> %d\n", rutIngresado);
+    printf("\n\n");
+  } 
 }
